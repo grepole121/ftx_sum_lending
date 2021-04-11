@@ -13,3 +13,4 @@ with open('tableDownload.csv') as csv_file:
         data[row[1]] = sum
     for coin in data:
         print(f"You have earned {data[coin]} in {coin}")
+    input("Press enter to exit")
