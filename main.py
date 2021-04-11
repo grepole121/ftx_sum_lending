@@ -9,8 +9,7 @@ with open('tableDownload.csv') as csv_file:
         if first:
             first = 0
             continue
-        sum = data[row[1]] + float(row[4])
-        data[row[1]] = sum
+        data[row[1]] += float(row[4])
     for coin in data:
         print(f"You have earned {data[coin]} in {coin}")
     input("Press enter to exit")
